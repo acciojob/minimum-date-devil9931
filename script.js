@@ -1,4 +1,5 @@
 function minDate(dates) {
+	 return dates.reduce((min, date) => date < min ? date : min, dates[0]);
   //write you code here
 }
 
@@ -37,4 +38,5 @@ var dates = [
   "2023/03/30",
 ];
 
-alert(minDate(dates));
+// alert(minDate(dates));
+console.log(minDate(dates));
